@@ -1,4 +1,6 @@
 .btn {
+    &,
+
     &:link, 
     &:visited {
         display: inline-block;
@@ -9,6 +11,7 @@
         transition: all .2s; /* has to be on initial state */
         position: relative;
         font-size: $default-font-size;
+        border: none;
     }
 
     &:hover {
@@ -16,7 +19,8 @@
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
     }
     
-    &:active {
+    &:active,
+    &:focus  {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
