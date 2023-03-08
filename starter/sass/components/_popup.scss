@@ -22,7 +22,7 @@
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
-        transition: all .4s 2s;
+        transition: all .3s .2s;
 
         @include respond(tab-port) {
             width: 100%;
